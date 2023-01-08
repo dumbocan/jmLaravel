@@ -2,6 +2,9 @@
     padding: var(--bs-card-cap-padding-y) var(--bs-card-cap-padding-x);
     margin-bottom: 0;
     color: var(--bs-card-cap-color);
-    background-color: rgb(54 173 238 / 35%);
+    background-color: rgba(74, 227, 244, 0.703);
     border-bottom: var(--bs-card-border-width) solid var(--bs-card-border-color);
+}
+.body{
+    background-color: rgb(120, 197, 227) important;
 }
