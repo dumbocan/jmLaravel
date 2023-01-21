@@ -8,7 +8,7 @@
             <div class="card">
 
 
-             @include('logo.logo')
+             @include('includes.logo')
 
 
 

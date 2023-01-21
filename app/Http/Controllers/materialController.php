@@ -6,6 +6,6 @@ class materialController extends Controller
 {
     public function index()
     {
-        return view('materials');
+        return view('materials.materials');
     }
 }

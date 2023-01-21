@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\addClientController;
+use App\Http\Controllers\customersController;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\materialController;
 use App\Http\Controllers\projectController;
@@ -23,7 +23,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/index', [IndexController::class, 'index'])->name('index');
-Route::get('/addClient', [addClientController::class, 'addClient'])->name('addClient');
-Route::get('/projects', [projectController::class, 'index'])->name('projects');
-Route::get('/materials', [materialController::class, 'index'])->name('materials');
+Route::get('/index', [IndexController::class, ''])->name('index');
+Route::get('/customers', [customersController::class, 'customers'])->name('customers.index');
+Route::get('/projects', [projectController::class, ''])->name('projects');
+Route::get('/materials', [materialController::class, ''])->name('materials');

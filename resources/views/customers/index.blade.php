@@ -1,6 +1,6 @@
 @extends('layouts.index')
 
 @section('content')
-<h1>Añadir Cliente</h1>
+<h1>Clientes</h1>
 
 @endsection

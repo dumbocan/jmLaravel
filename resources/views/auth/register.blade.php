@@ -7,7 +7,7 @@
         <div class="col-md-8">
             <div class="card">
 
-                @include('logo.logo')
+                @include('includes.logo')
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('register') }}">
