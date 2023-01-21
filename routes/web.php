@@ -1,9 +1,5 @@
 <?php
 
-use App\Http\Controllers\customersController;
-use App\Http\Controllers\IndexController;
-use App\Http\Controllers\materialController;
-use App\Http\Controllers\projectController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,7 +19,4 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/index', [IndexController::class, ''])->name('index');
-Route::get('/customers', [customersController::class, 'customers'])->name('customers.index');
-Route::get('/projects', [projectController::class, ''])->name('projects');
-Route::get('/materials', [materialController::class, ''])->name('materials');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

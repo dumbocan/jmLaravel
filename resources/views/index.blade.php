@@ -3,7 +3,7 @@
 
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/index') }}">
+                <a class="navbar-brand" href="{{ url('/home') }}">
                     {{ config('JM Electronautica', 'JM Electronautica') }}
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -13,17 +13,6 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
-                <div>
-
-
-                    <li>
-                        <form method="post" action="">
-                            @csrf
-                            <input type="text" name="search" placeholder="Buscar">
-                            <button type="button" class="btn btn-primary" style="padding-block: 3px;">Buscar</button>
-                        </form>
-                    </li>
-                    </div>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -54,17 +43,38 @@
         </nav>
 
         <main class="py-4">
-@yield('content')
 
         </main>
     </div>
+<!--
+    <body class="antialiased">
+        <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
+            @if (Route::has('login'))
+                <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
+                    @auth
+                        <a href="{{ url('/home') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Home</a>
+                    @else
+                        <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a>
+
+                        @if (Route::has('register'))
+                            <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Register</a>
+                        @endif
+                    @endauth
+                </div>
+            @endif
+-->
 
 
 
+<div class="oculto-impresion">
+    <a href="costumer/register">Insertar cliente</a>
+    <a href="costumer/search">Buscar cliente</a>
+    <a href="boat/search">Buscar barco</a>
+    <a href="worksheet/search_project">Proyectos</a>
+    <a href="material/show_material">Gestion de materiales</a>
+</div>
 
-
-
-
+@yield('content')
   </body>
 </html>
 

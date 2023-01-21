@@ -1,4 +1,4 @@
-@extends('layouts.login')
+@extends('home')
 
 
 @section('content')
@@ -8,7 +8,7 @@
             <div class="card">
 
 
-             @include('includes.logo')
+             @include('logo.logo')
 
 
 

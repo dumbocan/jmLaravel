@@ -1,5 +1,5 @@
 
-@extends('layouts.login')
+@extends('home')
 
 @section('content')
 <div class="container">
@@ -7,7 +7,7 @@
         <div class="col-md-8">
             <div class="card">
 
-                @include('includes.logo')
+                @include('logo.logo')
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('register') }}">

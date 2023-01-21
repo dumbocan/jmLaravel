@@ -1,4 +1,4 @@
-@extends('layouts.login')
+@extends('home')
 
 @section('content')
 <div class="container">
@@ -6,7 +6,7 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">{{ __('Reset Password') }}</div>
-                @include('includes.logo')
+                @include('logo.logo')
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('password.update') }}">
