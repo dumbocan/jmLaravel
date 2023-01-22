@@ -27,6 +27,10 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/index', [IndexController::class, 'index'])->name('index');
+<<<<<<< HEAD
 Route::get('/addClient', [addClientController::class, 'addClient'])->name('addClient');
+=======
+Route::get('/customers', [customersController::class, 'index'])->name('customers');
+>>>>>>> rama2
 Route::get('/projects', [projectController::class, 'index'])->name('projects');
 Route::get('/materials', [materialController::class, 'index'])->name('materials');
