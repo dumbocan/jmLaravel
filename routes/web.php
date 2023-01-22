@@ -27,6 +27,7 @@ Route::get('/', function () {
 Auth::routes();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 =======
 Route::get('/index', [IndexController::class, 'index'])->name('index');
@@ -34,3 +35,9 @@ Route::get('/addClient', [addClientController::class, 'addClient'])->name('addCl
 Route::get('/projects', [projectController::class, 'index'])->name('projects');
 Route::get('/materials', [materialController::class, 'index'])->name('materials');
 >>>>>>> parent of 6fdd902 (fallo en rutas, regreso atras)
+=======
+Route::get('/index', [IndexController::class, 'index'])->name('index');
+Route::get('/customers', [customersController::class, 'index'])->name('customers');
+Route::get('/projects', [projectController::class, 'index'])->name('projects');
+Route::get('/materials', [materialController::class, 'index'])->name('materials');
+>>>>>>> rama2
