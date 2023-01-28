@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class Supliers extends Migration
+class Companies extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,8 @@ class Supliers extends Migration
      */
     public function up()
     {
-        Schema::create('suppliers', function (Blueprint $table) {
+        
+        Schema::create('companies', function (Blueprint $table) {
             $table->id();
             $table->string('name');
             $table->string('address')->nullable();
@@ -31,7 +32,7 @@ class Supliers extends Migration
      */
     public function down()
     {
-        schema::dropIfExists('suppliers');
+        schema::dropIfExists('companies');
 
     }
 }

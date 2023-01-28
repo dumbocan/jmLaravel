@@ -1,4 +1,4 @@
-@extends('layouts.login')
+@extends('layouts.app')
 
 @section('content')
 <div class="container">
@@ -6,7 +6,6 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">{{ __('Confirm Password') }}</div>
-                @include('includes.logo')
 
                 <div class="card-body">
                     {{ __('Please confirm your password before continuing.') }}
