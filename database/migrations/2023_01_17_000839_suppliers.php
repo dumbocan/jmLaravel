@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class Users extends Migration
+class Supliers extends Migration
 {
     /**
      * Run the migrations.
@@ -13,15 +13,13 @@ class Users extends Migration
      */
     public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('suppliers', function (Blueprint $table) {
             $table->id();
-            $table->string('name');  
+            $table->string('name');
+            $table->string('address')->nullable();
+            $table->string('cif')->nullable();
+            $table->string('bank')->nullable();
             $table->string('email')->nullable();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password')->nullable();
-            $table->string('remember_token')->nullable();
-            $table->string('log_as')->nullable();
-
             $table->timestamps();
         });
     }
