@@ -2,24 +2,6 @@
 
 @section('content')
 
-<div class="container">
-	<div class="grid grid-cols-4">
-		
-	
-
-<h1>Clientes</h1>
-<h2>clientes</h2>
-<h3>clientes</h3>
-<h4>clientes</h4>
-<h5>clientes</h5>
-	</div>
-</div>
-
-
-
-
-<br>
-<br>
 
 <!--Utilizo el mismo formulario para insertar o para editar, solo me cambia el action -->
 <h1>Registro clientes</h1>
@@ -27,23 +9,57 @@
     <form action="" method="POST" >
         @csrf
 
-        <label for="costumer_name">Nombre</label>
+		
+<div class="container">
+	<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+		
+	
+ 
+	<div class="bg-blue-200  sm:col-span-2 md:col-span-4" >
+		<label for="costumer_name">Nombre</label>
         <input type="text" name="costumer_name" value=""/>
-        
-        <label for="address">Dirección</label>
+	</div>
+	<div class="bg-blue-300 sm:col-span-2 md:col-span-4">
+		<label for="address">Dirección</label>
         <input type="text" name="address" value=""/>
-    
-        <label for="passport">Identificación</label>
+	</div>
+	<div class="bg-blue-400 ">
+		<label for="passport">Identificación</label>
         <input type="text" name="passport" value=""/>
-    
-        <label for="country">Pais</label>
+	</div>
+	<div class="bg-blue-500 ">  
+		<label for="country">Pais</label>
         <input type="text" name="country" value=""/>
-    
-        <label for="telephone">Teléfono</label>
+	</div>
+	<div class="bg-blue-600 "> 
+		<label for="telephone">Teléfono</label>
         <input type="text" name="telephone" value=""/>
-        
-        <label for="email">Email</label>
+	</div>
+	<div class="bg-blue-700 "> 
+		<label for="email">Email</label>
         <input type="email" name="email" value=""/>
+	</div>
+		
+
+
+	</div>
+</div>
+
+<br>
+<br>
+
+<
+
+        
+       
+    
+        
+    
+        
+    
+        
+        
+      
     
         <label for="boat_name">Nombre embarcación</label>
         <input type="text" name="boat_name" value=""/>
@@ -59,7 +75,8 @@
         
     </form>
 
-   
+	
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
